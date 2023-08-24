@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 /* *************************this is ownershcema***************************** */
 
-const ul="mongodb://127.0.0.1/hotelroom";
+const ul="mongodb+srv://anujkumar666768:anuj@cluster0.1vrqdld.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(ul, { useNewUrlParser: true , useUnifiedTopology: true,
 });
