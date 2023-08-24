@@ -278,7 +278,8 @@ app.post("/login", async (req, res) => {
 
     res.cookie("jsonwebtoken", token, {
         expires: new Date(Date.now() + 1000 * 12000),
-       
+       sameSite:'none',
+        secure: true
        
     })
     return res.send({ message: "Successfully login", data: existinguser, token })
